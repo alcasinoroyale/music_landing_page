@@ -9,3 +9,37 @@
 	font-family: sans-serif;
 	color: #333;
 }
+
+.genres {
+  display: flex;
+}
+
+.genres h2 {
+  padding: 20px;
+}
+
+.record-1 {
+  padding: 20px;
+}
+
+.record-1 h2:hover {
+  color: blue;
+}
+
+#record1 {
+  border: 1.4rem solid black;
+  border-top: 1.4rem solid blue;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  animation: spin 4s linear infinite;
+}
+
+@keyFrames spin {
+ 0% {
+   transform: rotate(0deg);
+ }
+ 100% {
+   transform: rotate(360deg);
+ }
+}
