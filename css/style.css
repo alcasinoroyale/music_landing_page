@@ -8,31 +8,58 @@
 	box-sizing: border-box;
 	font-family: sans-serif;
 	color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
 }
 
 .genres {
   display: flex;
+  text-align: center;
 }
 
-.genres h2 {
-  padding: 20px;
-}
-
-.record-1 {
+.record-1, .record-2, .record-3, .record-4 {
   padding: 20px;
 }
 
 .record-1 h2:hover {
-  color: blue;
+  color: #00405e;
+}
+.record-2 h2:hover {
+  color: #008c6c;
+}
+.record-3 h2:hover {
+  color: #3e0059;
+}
+.record-4 h2:hover {
+  color: #b05200;
 }
 
-#record1 {
+#record1, #record2, #record3, #record4 {
   border: 1.4rem solid black;
-  border-top: 1.4rem solid blue;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   animation: spin 4s linear infinite;
+}
+
+#record1 {
+  border-top: 1.4rem solid #00405e;
+}
+
+#record2 {
+  border-top: 1.4rem solid #008c6c;
+}
+
+#record3 {
+  border-top: 1.4rem solid #3e0059;
+}
+
+#record4 {
+  border-top: 1.4rem solid #b05200;
 }
 
 @keyFrames spin {
